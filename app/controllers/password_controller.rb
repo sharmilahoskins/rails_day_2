@@ -14,7 +14,6 @@ class PasswordController < ApplicationController
     elsif @password !=~ /\d/ && @password !=~ regex
      flash.now[:alert] = "Password must contain a number and a special character"
     end
-
    render "check_password.html.erb"
   end
 
